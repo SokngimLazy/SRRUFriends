@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SRRUFriend</string>
+    <string name="str_login">Login</string>
 </resources>
