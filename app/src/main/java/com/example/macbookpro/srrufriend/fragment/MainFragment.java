@@ -28,6 +28,13 @@ public class MainFragment extends Fragment{
             @Override
             public void onClick(View v) {
 
+                //Replaces fragment
+                getActivity().getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.contentMainFragment, new RegisterFragment())
+                        .addToBackStack(null)
+                        .commit();
+
             }
         });
     }

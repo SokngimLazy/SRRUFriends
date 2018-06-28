@@ -2,46 +2,60 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
     android:orientation="vertical">
 
     <!--Toolbar-->
     <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_register"
         android:layout_width="match_parent"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/colorPrimary"/>
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center" >
+    <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin"
-        android:background="#10000000"
+        android:background="#80c8b900"
         android:padding="10dp">
 
         <!--Avata-->
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/img_avata"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerInside"
             android:src="@drawable/image"
             android:layout_gravity="center_horizontal" />
 
         <!--Name-->
         <EditText
+            android:id="@+id/et_user"
             android:background="@drawable/display_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <!--Email-->
         <EditText
+            android:id="@+id/et_email"
             android:background="@drawable/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <!--password-->
         <EditText
+            android:id="@+id/et_password"
             android:background="@drawable/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
+    </LinearLayout>
     </LinearLayout>
 </LinearLayout>
