@@ -6,8 +6,11 @@
     <!--Content-->
     <LinearLayout
         android:layout_margin="@dimen/margin"
+        android:padding="@dimen/padding"
+        android:background="#c8b900"
+        android:layout_centerInParent="true"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <!--logo-->
@@ -15,7 +18,8 @@
             android:layout_gravity="center_horizontal"
             android:src="@drawable/logo"
             android:layout_width="@dimen/logo"
-            android:layout_height="@dimen/logo" />
+            android:layout_height="@dimen/logo"
+            android:layout_marginBottom="10dp"/>
 
         <!--user-->
         <LinearLayout
@@ -35,6 +39,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
+                android:textColorHint="@android:color/white"
+                android:textColor="#80000000"
+                android:backgroundTint="@android:color/white"
                 android:hint="User : "/>
 
         </LinearLayout>
@@ -43,7 +50,8 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
 
             <!--Icon-->
             <ImageView
@@ -57,7 +65,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
-                android:hint="Password : "/>
+                android:textColor="#80000000"
+                android:textColorHint="@android:color/white"
+                android:backgroundTint="@android:color/white"
+                android:hint="Password : " />
 
         </LinearLayout>
 
@@ -68,18 +79,22 @@
             android:layout_gravity="center_horizontal"
             android:text="Login"
             android:textAllCaps="false"
-            android:textColor="#70ff0000"
-            android:background="#60E5E357"/>
+            android:textColor="#ffff"
+            android:textSize="@dimen/text_size"
+            android:background="@drawable/button_white"/>
 
         <!--Register-->
 
         <TextView
+            android:id="@+id/txt_new_register"
             android:layout_marginTop="@dimen/margin_new_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="New Register"
-            android:textColor="#ff0000"/>
+            android:textSize="@dimen/text_size"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
 
 
     </LinearLayout>

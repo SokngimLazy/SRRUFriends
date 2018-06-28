@@ -5,6 +5,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/bg_wallpaper"
+        android:src="@drawable/wallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:alpha=".8"/>
+
     <FrameLayout
         android:id="@+id/contentMainFragment"
         android:layout_width="match_parent"
