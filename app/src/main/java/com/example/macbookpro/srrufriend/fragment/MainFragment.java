@@ -7,6 +7,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.macbookpro.srrufriend.R;
@@ -19,6 +21,9 @@ public class MainFragment extends Fragment{
 
         //Register Controller
         registerController();
+
+
+        loginController();
     }
 
 
@@ -35,6 +40,17 @@ public class MainFragment extends Fragment{
                         .addToBackStack(null)
                         .commit();
 
+            }
+        });
+    }
+
+    private void loginController(){
+        Button btnLogin = getView().findViewById(R.id.btnLogin);
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                EditText userEditext = getView().findViewById(R.id.et_user);
+                EditText passEditext = getView().findViewById(R.id.et_password);
             }
         });
     }
